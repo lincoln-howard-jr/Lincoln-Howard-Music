@@ -4,7 +4,6 @@ module.exports = function (body) {
     <html>
     <head>
       <title>Experiments</title>
-      <base target="_blank">
       <meta charset=utf-8>
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <link rel="stylesheet" type="text/css" href="/static/css/bare.min.css">
@@ -13,6 +12,12 @@ module.exports = function (body) {
       <style>
         * {
           font-family: 'Nunito', sans-serif;
+        }
+        html, body {
+          min-height: 100vh;
+        }
+        div.body {
+          padding-bottom: 7.5vh;
         }
         div.wrapper {
           width: 100%;
@@ -24,6 +29,9 @@ module.exports = function (body) {
           width: 100%;
           height: 100%;
           display: block;
+        }
+        section {
+          margin-bottom: 7.5vh;
         }
         .sub-heading {
           border-bottom: 1px solid #679;
@@ -73,8 +81,34 @@ module.exports = function (body) {
           </ul>
         </label>
       </nav>
-
-      ${body}
+      <div class="body">
+        ${body}
+      </div>
+      <footer style="height: 7.5vh;bottom: 0; position: absolute;">
+        <grid style="text-align: center;">
+          <div col="1/3">
+            <h3 style="margin: 0 auto;">
+              <a class="listen" href="https://github.com/lincoln-howard-jr/Lincoln-Howard-Music">
+                <i class="fa fa-github"></i>
+              </a>
+            </h3>
+          </div>
+          <div col="1/3">
+            <h2 style="margin: 0 auto;">
+              <a class="listen" href="https://www.facebook.com/LincolnHowardJr/">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </h2>
+          </div>
+          <div col="1/3">
+            <h3 style="margin: 0 auto;">
+              <a class="listen" href="/contact">
+                <i class="fa fa-envelope"></i>
+              </a>
+            </h3>
+          </div>
+        </grid>
+      </footer>
 
     </body>
     </html>

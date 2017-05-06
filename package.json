@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/lincoln-howard-jr/Lincoln-Howard-Music/issues"
   },
-  "homepage": "https://github.com/lincoln-howard-jr/Lincoln-Howard-Music#readme"
+  "homepage": "https://github.com/lincoln-howard-jr/Lincoln-Howard-Music#readme",
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.15.2",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {}
 }
