@@ -59,6 +59,15 @@ module.exports = function (body) {
           list-style-type: none;
           text-align: center;
         }
+        .footer {
+          bottom: 0;
+          position: absolute;
+          height: 7.5vh;
+          background: #679;
+        }
+        .footer > div > h3, .footer > div > h2 {
+          margin: auto;
+        }
       </style>
     </head>
     <body>
@@ -84,31 +93,29 @@ module.exports = function (body) {
       <div class="body">
         ${body}
       </div>
-      <footer style="height: 7.5vh;bottom: 0; position: absolute;">
-        <grid style="text-align: center;">
+        <grid xx full txt="c" class="footer">
           <div col="1/3">
-            <h3 style="margin: 0 auto;">
+            <h3>
               <a class="listen" href="https://github.com/lincoln-howard-jr/Lincoln-Howard-Music">
                 <i class="fa fa-github"></i>
               </a>
             </h3>
           </div>
           <div col="1/3">
-            <h2 style="margin: 0 auto;">
+            <h2>
               <a class="listen" href="https://www.facebook.com/LincolnHowardJr/">
                 <i class="fa fa-facebook"></i>
               </a>
             </h2>
           </div>
           <div col="1/3">
-            <h3 style="margin: 0 auto;">
+            <h3>
               <a class="listen" href="/contact">
                 <i class="fa fa-envelope"></i>
               </a>
             </h3>
           </div>
         </grid>
-      </footer>
 
     </body>
     </html>
