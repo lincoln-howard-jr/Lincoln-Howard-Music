@@ -5,6 +5,8 @@ module.exports = function (body) {
     <head>
       <title>Experiments</title>
       <base target="_blank">
+      <meta charset=utf-8>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <link rel="stylesheet" type="text/css" href="/static/css/bare.min.css">
       <link rel="stylesheet" type="text/css" href="/fa/font-awesome.css">
       <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -44,6 +46,10 @@ module.exports = function (body) {
         .listen {
           color: #111;
           margin: 0 6px;
+        }
+        ul.list {
+          list-style-type: none;
+          text-align: center;
         }
       </style>
     </head>

@@ -4,7 +4,7 @@ let fs = require ('fs');
 let html = require ('./pages'); 
 
 let pages = {
-  '/': html (fs.readFileSync ('index.html'))
+  '/': html (fs.readFileSync ('static/pages/index.html'))
 }
 
 let app = express ();
@@ -22,4 +22,4 @@ app.get ('/static/:dir/:file', (req, res) => {
 app.use ('/fa', express.static ('node_modules/font-awesome/css'));
 app.use ('/fonts', express.static ('node_modules/font-awesome/fonts'));
 
-app.listen (8080);
+app.listen (80);
