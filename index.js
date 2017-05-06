@@ -7,7 +7,7 @@ let pages = {
   '/': html (fs.readFileSync ('static/pages/index.html')),
   '/upcoming': html (fs.readFileSync ('static/pages/upcoming.html')),
   '/contact': html (fs.readFileSync ('static/pages/contact.html')),
-  '/works': html (fs.readFileSync ('static/pages/works.html'))
+  '/about': html (fs.readFileSync ('static/pages/works.html'))
 }
 
 let app = express ();

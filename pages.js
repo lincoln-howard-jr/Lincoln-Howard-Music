@@ -59,6 +59,10 @@ module.exports = function (body) {
           list-style-type: none;
           text-align: center;
         }
+        ul.list li {
+          display: inline-block;
+          width: 33%;
+        }
         .footer {
           bottom: 0;
           position: absolute;
