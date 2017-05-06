@@ -65,7 +65,10 @@ module.exports = function (body) {
           height: 7.5vh;
           background: #679;
         }
-        .footer > div > h3, .footer > div > h2 {
+        .footer div {
+          background: #679;
+        }
+        .footer div h3, .footer div h2 {
           margin: auto;
         }
       </style>
