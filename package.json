@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/lincoln-howard-jr/Lincoln-Howard-Music#readme",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "compression": "^1.6.2",
     "express": "^4.15.2",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "uuid": "^3.0.1"
   },
   "devDependencies": {}
 }

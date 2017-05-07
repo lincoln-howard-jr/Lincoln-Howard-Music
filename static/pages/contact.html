@@ -1,11 +1,14 @@
 
 <section>
-  <form>
+  <form action="/messages" method="POST">
     <label>Name</label>
-    <input type="text" name="name" placeholder="your name">
+    <input type="text" name="name">
     <label>Email</label>
-    <input type="email" name="email" placeholder="your email">
+    <input type="email" name="email">
     <label>Subject</label>
     <input type="text" name="subject">
+    <label>Message</label>
+    <textarea name="message"></textarea>
+    <input type="submit">
   </form>
 </section>
