@@ -15,7 +15,7 @@ let pages = {
 
 let app = express ();
 
-app.use (require ('body-parser') ())
+app.use (require ('body-parser') ());
 app.use (require ('compression') ());
 app.get ('/', (req, res) => {
   res.header ('X-Frame-Options', 'ALLOW-FROM https://www.youtube.com/');
@@ -23,6 +23,7 @@ app.get ('/', (req, res) => {
   res.send (pages.index);
 });
 app.get ('/:page', (req, res) => {
+  res.header ('X-Frame-Options', 'ALLOW-FROM https://www.google.com/maps/');
   res.header ('Content-Type', 'text/html');
   res.send (pages [req.params.page]);
 });

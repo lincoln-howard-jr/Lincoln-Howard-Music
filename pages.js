@@ -8,21 +8,44 @@ module.exports = function (body) {
       <meta name="viewport" content="width=device-width, initial-scale=1"/>
       <link rel="stylesheet" type="text/css" href="/static/css/bare.min.css">
       <link rel="stylesheet" type="text/css" href="/fa/font-awesome.css">
-      <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nunito" rel="stylesheet">
       <style>
         * {
           font-family: 'Nunito', sans-serif;
         }
         html, body {
           min-height: 100vh;
+          background: rgba(200,224,200,0.1);
+        }
+        nav {
+          min-height: 7.5vh;
         }
         div.body {
+          margin-top: 12px;
+          min-height: 77.5vh;
           padding-bottom: 7.5vh;
+        }
+        div.body > section {
+          font-size: 16px;
+          background: #fff;
+          border: 1px solid #ccc;
+          border-width: 0 1px;
+        }
+        div.body > section:first-child {
+          border-top: 1px solid #ccc;
+        }
+        div.body > section:last-child {
+          border-bottom: 1px solid #ccc;
         }
         div.wrapper {
           width: 100%;
           height: 0;
           padding-bottom: 56%;
+        }
+        div.wrapper-75 {
+          width: 100%;
+          height: 0;
+          padding-bottom: 76%;
         }
         iframe {
           position: absolute;
@@ -30,11 +53,37 @@ module.exports = function (body) {
           height: 100%;
           display: block;
         }
+        .lyrics-box {
+          font-size: 16px;
+          text-align: center;
+          font-family: 'Indie Flower', cursive;
+        }
+        .bubble {
+          margin: 5px;
+          padding: 0;
+          border-radius: 50%;
+          border: 1px solid #efefef;
+          transition: 0.2s all;
+        }
+        .bubble:hover {
+          border-color: #ccc;
+          padding: 5px;
+        }
+        .boxy {
+          margin: 0;
+          padding: 5px;
+          border: solid 1px #efefef;
+          transition: 0.2s all;
+        }
+        .boxy:hover {
+          border-color: #ccc;
+          box-shadow: 1px 1px 5px #999;
+        }
         section {
-          margin-bottom: 7.5vh;
+          border-color: #ccc;
+          border-width: 0 1px;
         }
         .sub-heading {
-          border-bottom: 1px solid #679;
           height: 2rem;
           margin-bottom: 4rem;
         }
@@ -43,7 +92,6 @@ module.exports = function (body) {
           display: inline-block;
           padding: 0 20px 0 0;
           margin: 0;
-          background: #fff;
           color: #679;
         }
         .sub-heading h2.right {
@@ -54,6 +102,10 @@ module.exports = function (body) {
         .listen {
           color: #111;
           margin: 0 6px;
+          transition: 0.3s all;
+        }
+        .listen:hover {
+          border-bottom: 1px solid #ccc;
         }
         ul.list {
           list-style-type: none;
@@ -61,13 +113,20 @@ module.exports = function (body) {
         }
         ul.list li {
           display: inline-block;
-          width: 33%;
+          width: 49%;
+          margin-top: 10px;
         }
         .footer {
           bottom: 0;
           position: absolute;
           height: 7.5vh;
           background: #679;
+        }
+        .footer div {
+          height: 100%;
+          margin: 0;
+          line-height: 7.5vh;
+          vertical-align: middle;
         }
         .footer div {
           background: #679;
@@ -88,6 +147,7 @@ module.exports = function (body) {
           <ul>
             <li><a href="/upcoming">Upcoming</a></li>
             <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
             <li>
               <a href="#"></a>
               <menu>
