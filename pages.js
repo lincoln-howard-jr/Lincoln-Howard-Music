@@ -110,11 +110,14 @@ module.exports = function (body) {
         ul.list {
           list-style-type: none;
           text-align: center;
+          vertical-align: middle;
         }
         ul.list li {
           display: inline-block;
+          vertical-align: middle;
           width: 49%;
           margin-top: 10px;
+          font-size: 20px;
         }
         .footer {
           bottom: 0;
