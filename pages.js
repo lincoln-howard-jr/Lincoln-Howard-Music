@@ -186,7 +186,15 @@ module.exports = function (body) {
             </h3>
           </div>
         </grid>
-
+        <!-- Google Analytics -->
+        <script>
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', 'UA-99563768-1', 'auto');
+          ga('send', 'pageview');
+          if (document.referrer) ga('set', 'referrer', document.referrer);
+        </script>
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
+        <!-- End Google Analytics -->
     </body>
     </html>
   `
